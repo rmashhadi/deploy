@@ -1,0 +1,13 @@
+$colors: (
+  left-part-color: linear-gradient(to bottom, black, gray),
+  middle-part-color: linear-gradient(black, rgb(66, 51, 48), black),
+  right-part-color: rgb(184, 184, 180),
+  theme: lightgray
+);
+$mobile: 840px;
+
+@mixin mobile {
+  @media (max-width:#{$mobile}) {
+    @content;
+  }
+}
